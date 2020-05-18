@@ -1,0 +1,431 @@
+
+*** Running vivado
+    with args -log MINI_ROUTER_WRAPPER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MINI_ROUTER_WRAPPER.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+  **** IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source MINI_ROUTER_WRAPPER.tcl -notrace
+Command: synth_design -top MINI_ROUTER_WRAPPER -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3596 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 838.578 ; gain = 234.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MINI_ROUTER_WRAPPER' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Wrapper.vhd:37]
+INFO: [Synth 8-3491] module 'Adapter' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:8' bound to instance 'adapter_serial_parallel' of component 'Adapter' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Wrapper.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'Adapter' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:36]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_data1_serial' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'd_flip_flop' (1#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:13]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_data2_serial' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:146]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_req1' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:156]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_req2' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:165]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_data1' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:174]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_data2' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:183]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_data_out_serial' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:192]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_valid' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:201]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_grant1' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:211]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_grant2' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:220]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'sipo' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/sipo.vhd:10' bound to instance 'sipo_data1' of component 'sipo' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'sipo' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/sipo.vhd:20]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sipo' (2#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/sipo.vhd:20]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'sipo' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/sipo.vhd:10' bound to instance 'sipo_data2' of component 'sipo' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:238]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'piso' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/piso.vhd:10' bound to instance 'piso_data_out' of component 'piso' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'piso' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/piso.vhd:21]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'piso' (3#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/piso.vhd:21]
+INFO: [Synth 8-3491] module 'MiniRouter' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:8' bound to instance 'mini_router' of component 'MiniRouter' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'MiniRouter' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:36]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_req1' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:165]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'd_flip_flop_n' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:8' bound to instance 'ff_10_data1' of component 'd_flip_flop_n' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'd_flip_flop_n' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:18]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_flip_flop_n' (4#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:18]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_req2' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:184]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'd_flip_flop_n' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:8' bound to instance 'ff_10_data2' of component 'd_flip_flop_n' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:193]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Decoder.vhd:8' bound to instance 'd_link1' of component 'Decoder' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Decoder.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (5#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Decoder.vhd:20]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Decoder.vhd:8' bound to instance 'd_link2' of component 'Decoder' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:214]
+INFO: [Synth 8-3491] module 'RoundRobin' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/RoundRobin.vhd:8' bound to instance 'rr_arbiter' of component 'RoundRobin' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'RoundRobin' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/RoundRobin.vhd:30]
+INFO: [Synth 8-3491] module 'LUT' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/LUT.vhd:9' bound to instance 'rr_lut' of component 'LUT' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/RoundRobin.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'LUT' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/LUT.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'LUT' (6#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/LUT.vhd:16]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_arbiter' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/RoundRobin.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'RoundRobin' (7#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/RoundRobin.vhd:30]
+INFO: [Synth 8-3491] module 'Multiplexer' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Multiplexer.vhd:8' bound to instance 'mux' of component 'Multiplexer' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Multiplexer.vhd:33]
+INFO: [Synth 8-226] default block is never used [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Multiplexer.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer' (8#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Multiplexer.vhd:33]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_valid' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:252]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_grant1' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:261]
+INFO: [Synth 8-3491] module 'd_flip_flop' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:4' bound to instance 'ff_grant2' of component 'd_flip_flop' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:270]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'd_flip_flop_n' declared at 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:8' bound to instance 'ff_8_data_out' of component 'd_flip_flop_n' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'd_flip_flop_n__parameterized2' [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_flip_flop_n__parameterized2' (8#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop_n.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'MiniRouter' (9#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/MiniRouter.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Adapter' (10#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Adapter.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'MINI_ROUTER_WRAPPER' (11#1) [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/Wrapper.vhd:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 911.906 ; gain = 308.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 911.906 ; gain = 308.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 911.906 ; gain = 308.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 911.906 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/constrs_1/imports/constr/MINI_ROUTER_CONSTRAINTS.xdc]
+Finished Parsing XDC File [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/constrs_1/imports/constr/MINI_ROUTER_CONSTRAINTS.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/constrs_1/imports/constr/MINI_ROUTER_CONSTRAINTS.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MINI_ROUTER_WRAPPER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MINI_ROUTER_WRAPPER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1014.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1014.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module d_flip_flop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sipo 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module piso 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module d_flip_flop_n 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module Multiplexer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module d_flip_flop_n__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[1]' (FDC) to 'adapter_serial_parallel/sipo_data2/intermediate_reg[2]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[1]' (FDC) to 'adapter_serial_parallel/sipo_data1/intermediate_reg[2]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[4]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[4]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[2]' (FDC) to 'adapter_serial_parallel/sipo_data2/intermediate_reg[3]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[2]' (FDC) to 'adapter_serial_parallel/sipo_data1/intermediate_reg[3]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[5]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[5]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[6]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[6]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[7]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[7]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[8]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[8]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[9]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[9]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data1/intermediate_reg[1]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data1/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'adapter_serial_parallel/sipo_data2/intermediate_reg[1]' (FDC) to 'adapter_serial_parallel/mini_router/ff_10_data2/q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adapter_serial_parallel/piso_data_out/intermediate_reg[0]_C )
+WARNING: [Synth 8-3332] Sequential element (adapter_serial_parallel/piso_data_out/intermediate_reg[0]_C) is unused and will be removed from module MINI_ROUTER_WRAPPER.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+--------------------------------------------------------------+---------------+----------------+
+|Module Name         | RTL Object                                                   | Depth x Width | Implemented As | 
++--------------------+--------------------------------------------------------------+---------------+----------------+
+|LUT                 | lut[0]                                                       | 128x3         | LUT            | 
+|MINI_ROUTER_WRAPPER | adapter_serial_parallel/mini_router/rr_arbiter/rr_lut/lut[0] | 128x3         | LUT            | 
++--------------------+--------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\adapter_serial_parallel/ff_data1/q_reg ) from module (MINI_ROUTER_WRAPPER) as it is equivalent to (\adapter_serial_parallel/ff_data1_serial/q_reg ) and driving same net [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:19]
+INFO: [Synth 8-4765] Removing register instance (\adapter_serial_parallel/ff_data2/q_reg ) from module (MINI_ROUTER_WRAPPER) as it is equivalent to (\adapter_serial_parallel/ff_data2_serial/q_reg ) and driving same net [C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.srcs/sources_1/imports/src/d_flip_flop.vhd:19]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1014.738 ; gain = 410.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     3|
+|4     |LUT3 |    22|
+|5     |LUT5 |     3|
+|6     |LUT6 |    12|
+|7     |FDCE |    51|
+|8     |FDPE |     8|
+|9     |FDRE |     1|
+|10    |LDC  |     8|
+|11    |IBUF |     6|
+|12    |OBUF |     4|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------------+------------------------------+------+
+|      |Instance                  |Module                        |Cells |
++------+--------------------------+------------------------------+------+
+|1     |top                       |                              |   120|
+|2     |  adapter_serial_parallel |Adapter                       |   109|
+|3     |    ff_data1_serial       |d_flip_flop                   |     1|
+|4     |    ff_data2_serial       |d_flip_flop_0                 |     1|
+|5     |    ff_data_out_serial    |d_flip_flop_1                 |     1|
+|6     |    ff_grant1             |d_flip_flop_2                 |     1|
+|7     |    ff_grant2             |d_flip_flop_3                 |     1|
+|8     |    ff_req1               |d_flip_flop_4                 |     1|
+|9     |    ff_req2               |d_flip_flop_5                 |     1|
+|10    |    ff_valid              |d_flip_flop_6                 |     1|
+|11    |    mini_router           |MiniRouter                    |    63|
+|12    |      mux                 |Multiplexer                   |     8|
+|13    |      ff_10_data1         |d_flip_flop_n                 |     8|
+|14    |      ff_10_data2         |d_flip_flop_n_8               |     9|
+|15    |      ff_8_data_out       |d_flip_flop_n__parameterized2 |     8|
+|16    |      ff_grant1           |d_flip_flop_9                 |     1|
+|17    |      ff_grant2           |d_flip_flop_10                |     1|
+|18    |      ff_req1             |d_flip_flop_11                |     1|
+|19    |      ff_req2             |d_flip_flop_12                |     1|
+|20    |      ff_valid            |d_flip_flop_13                |    17|
+|21    |      rr_arbiter          |RoundRobin                    |     9|
+|22    |        ff_arbiter        |d_flip_flop_14                |     3|
+|23    |        rr_lut            |LUT                           |     6|
+|24    |    piso_data_out         |piso                          |    32|
+|25    |    sipo_data1            |sipo                          |     3|
+|26    |    sipo_data2            |sipo_7                        |     3|
++------+--------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1022.313 ; gain = 315.711
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1022.313 ; gain = 418.543
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1033.371 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1038.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LDC => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 1038.531 ; gain = 732.707
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.531 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marie/Desktop/Pise/ElectronicSystems/Lab/TP/MiniRouter/Vivado/Mini_Router.runs/synth_1/MINI_ROUTER_WRAPPER.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MINI_ROUTER_WRAPPER_utilization_synth.rpt -pb MINI_ROUTER_WRAPPER_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 01:37:16 2020...

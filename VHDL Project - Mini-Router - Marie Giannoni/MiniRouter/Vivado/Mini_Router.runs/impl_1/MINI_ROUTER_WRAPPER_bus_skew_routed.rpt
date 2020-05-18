@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Sun Feb  9 02:10:51 2020
+| Host         : LAPTOP-BAOKLRMV running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file MINI_ROUTER_WRAPPER_bus_skew_routed.rpt -pb MINI_ROUTER_WRAPPER_bus_skew_routed.pb -rpx MINI_ROUTER_WRAPPER_bus_skew_routed.rpx
+| Design       : MINI_ROUTER_WRAPPER
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

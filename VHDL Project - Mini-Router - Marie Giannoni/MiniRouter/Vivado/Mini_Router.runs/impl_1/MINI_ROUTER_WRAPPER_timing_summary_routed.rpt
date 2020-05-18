@@ -1,0 +1,2396 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Sun Feb  9 02:10:51 2020
+| Host         : LAPTOP-BAOKLRMV running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file MINI_ROUTER_WRAPPER_timing_summary_routed.rpt -pb MINI_ROUTER_WRAPPER_timing_summary_routed.pb -rpx MINI_ROUTER_WRAPPER_timing_summary_routed.rpx -warn_on_violation
+| Design       : MINI_ROUTER_WRAPPER
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 8 register/latch pins with no clock driven by root clock pin: rst (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: adapter_serial_parallel/mini_router/ff_valid/q_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 8 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 5 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.236        0.000                      0                   70        0.058        0.000                      0                   70        3.500        0.000                       0                    61  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)         Period(ns)      Frequency(MHz)
+-----   ------------         ----------      --------------
+clk125  {0.000 4.000}        8.000           125.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk125              3.236        0.000                      0                   55        0.058        0.000                      0                   55        3.500        0.000                       0                    61  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  clk125             clk125                   4.991        0.000                      0                   15        0.406        0.000                      0                   15  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk125
+  To Clock:  clk125
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.236ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.058ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.236ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.536ns  (logic 2.024ns (44.619%)  route 2.512ns (55.381%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.162ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.971ns = ( 12.971 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.277ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.785     6.672    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y51         LUT3 (Prop_lut3_I0_O)        0.322     6.994 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[1]_LDC_i_2/O
+                         net (fo=2, routed)           0.717     7.711    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C_0
+    SLICE_X38Y50         LDCE (SetClr_ldce_CLR_Q)     1.100     8.811 f  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_LDC/Q
+                         net (fo=1, routed)           0.521     9.333    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_LDC_n_0
+    SLICE_X38Y50         LUT3 (Prop_lut3_I1_O)        0.124     9.457 r  adapter_serial_parallel/piso_data_out/intermediate[2]_C_i_1/O
+                         net (fo=2, routed)           0.489     9.945    adapter_serial_parallel/piso_data_out/p_2_in[2]
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.579    12.971    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+                         clock pessimism              0.277    13.248    
+                         clock uncertainty           -0.035    13.212    
+    SLICE_X38Y49         FDPE (Setup_fdpe_C_D)       -0.031    13.181    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P
+  -------------------------------------------------------------------
+                         required time                         13.181    
+                         arrival time                          -9.945    
+  -------------------------------------------------------------------
+                         slack                                  3.236    
+
+Slack (MET) :             3.584ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.250ns  (logic 2.024ns (47.624%)  route 2.226ns (52.376%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.785     6.672    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y51         LUT3 (Prop_lut3_I0_O)        0.322     6.994 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[1]_LDC_i_2/O
+                         net (fo=2, routed)           0.717     7.711    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C_0
+    SLICE_X38Y50         LDCE (SetClr_ldce_CLR_Q)     1.100     8.811 f  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_LDC/Q
+                         net (fo=1, routed)           0.521     9.333    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_LDC_n_0
+    SLICE_X38Y50         LUT3 (Prop_lut3_I1_O)        0.124     9.457 r  adapter_serial_parallel/piso_data_out/intermediate[2]_C_i_1/O
+                         net (fo=2, routed)           0.203     9.659    adapter_serial_parallel/piso_data_out/p_2_in[2]
+    SLICE_X39Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X39Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X39Y50         FDCE (Setup_fdce_C_D)       -0.067    13.243    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C
+  -------------------------------------------------------------------
+                         required time                         13.243    
+                         arrival time                          -9.659    
+  -------------------------------------------------------------------
+                         slack                                  3.584    
+
+Slack (MET) :             3.628ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.244ns  (logic 1.982ns (46.698%)  route 2.262ns (53.302%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.955ns = ( 12.955 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.683     6.570    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y52         LUT3 (Prop_lut3_I0_O)        0.292     6.862 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[6]_LDC_i_2/O
+                         net (fo=2, routed)           0.681     7.543    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C_0
+    SLICE_X39Y52         LDCE (SetClr_ldce_CLR_Q)     1.088     8.631 f  adapter_serial_parallel/piso_data_out/intermediate_reg[6]_LDC/Q
+                         net (fo=1, routed)           0.403     9.034    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_LDC_n_0
+    SLICE_X39Y52         LUT3 (Prop_lut3_I1_O)        0.124     9.158 r  adapter_serial_parallel/piso_data_out/intermediate[7]_C_i_1/O
+                         net (fo=2, routed)           0.495     9.654    adapter_serial_parallel/piso_data_out/p_2_in[7]
+    SLICE_X40Y52         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.564    12.955    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X40Y52         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/C
+                         clock pessimism              0.429    13.384    
+                         clock uncertainty           -0.035    13.349    
+    SLICE_X40Y52         FDCE (Setup_fdce_C_D)       -0.067    13.282    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C
+  -------------------------------------------------------------------
+                         required time                         13.282    
+                         arrival time                          -9.654    
+  -------------------------------------------------------------------
+                         slack                                  3.628    
+
+Slack (MET) :             3.698ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.136ns  (logic 1.979ns (47.847%)  route 2.157ns (52.153%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.635     6.522    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y50         LUT3 (Prop_lut3_I0_O)        0.290     6.812 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[2]_LDC_i_2/O
+                         net (fo=2, routed)           0.495     7.307    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C_0
+    SLICE_X39Y49         LDCE (SetClr_ldce_CLR_Q)     1.087     8.394 f  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_LDC/Q
+                         net (fo=1, routed)           0.493     8.888    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_LDC_n_0
+    SLICE_X39Y49         LUT3 (Prop_lut3_I1_O)        0.124     9.012 r  adapter_serial_parallel/piso_data_out/intermediate[3]_C_i_1/O
+                         net (fo=2, routed)           0.534     9.545    adapter_serial_parallel/piso_data_out/p_2_in[3]
+    SLICE_X36Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X36Y50         FDCE (Setup_fdce_C_D)       -0.067    13.243    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C
+  -------------------------------------------------------------------
+                         required time                         13.243    
+                         arrival time                          -9.545    
+  -------------------------------------------------------------------
+                         slack                                  3.698    
+
+Slack (MET) :             3.753ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.116ns  (logic 1.881ns (45.701%)  route 2.235ns (54.299%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.953ns = ( 12.953 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.518     5.927 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/Q
+                         net (fo=2, routed)           0.809     6.737    adapter_serial_parallel/mini_router/ff_valid/Q[4]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I1_O)        0.152     6.889 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[4]_LDC_i_2/O
+                         net (fo=2, routed)           0.522     7.411    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C_0
+    SLICE_X36Y52         LDCE (SetClr_ldce_CLR_Q)     1.087     8.498 f  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_LDC/Q
+                         net (fo=1, routed)           0.265     8.763    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_LDC_n_0
+    SLICE_X37Y52         LUT3 (Prop_lut3_I1_O)        0.124     8.887 r  adapter_serial_parallel/piso_data_out/intermediate[5]_C_i_1/O
+                         net (fo=2, routed)           0.638     9.525    adapter_serial_parallel/piso_data_out/p_2_in[5]
+    SLICE_X38Y53         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.562    12.953    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y53         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C/C
+                         clock pessimism              0.391    13.344    
+                         clock uncertainty           -0.035    13.309    
+    SLICE_X38Y53         FDCE (Setup_fdce_C_D)       -0.031    13.278    adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C
+  -------------------------------------------------------------------
+                         required time                         13.278    
+                         arrival time                          -9.525    
+  -------------------------------------------------------------------
+                         slack                                  3.753    
+
+Slack (MET) :             3.773ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.099ns  (logic 1.982ns (48.359%)  route 2.117ns (51.641%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.683     6.570    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y52         LUT3 (Prop_lut3_I0_O)        0.292     6.862 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[6]_LDC_i_2/O
+                         net (fo=2, routed)           0.681     7.543    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C_0
+    SLICE_X39Y52         LDCE (SetClr_ldce_CLR_Q)     1.088     8.631 f  adapter_serial_parallel/piso_data_out/intermediate_reg[6]_LDC/Q
+                         net (fo=1, routed)           0.403     9.034    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_LDC_n_0
+    SLICE_X39Y52         LUT3 (Prop_lut3_I1_O)        0.124     9.158 r  adapter_serial_parallel/piso_data_out/intermediate[7]_C_i_1/O
+                         net (fo=2, routed)           0.349     9.508    adapter_serial_parallel/piso_data_out/p_2_in[7]
+    SLICE_X41Y53         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X41Y53         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P/C
+                         clock pessimism              0.429    13.383    
+                         clock uncertainty           -0.035    13.348    
+    SLICE_X41Y53         FDPE (Setup_fdpe_C_D)       -0.067    13.281    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P
+  -------------------------------------------------------------------
+                         required time                         13.281    
+                         arrival time                          -9.508    
+  -------------------------------------------------------------------
+                         slack                                  3.773    
+
+Slack (MET) :             3.817ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.016ns  (logic 2.011ns (50.070%)  route 2.005ns (49.930%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.695     6.582    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X41Y52         LUT3 (Prop_lut3_I0_O)        0.322     6.904 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[3]_LDC_i_2/O
+                         net (fo=2, routed)           0.547     7.451    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C_0
+    SLICE_X40Y50         LDCE (SetClr_ldce_CLR_Q)     1.087     8.538 f  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_LDC/Q
+                         net (fo=1, routed)           0.418     8.956    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_LDC_n_0
+    SLICE_X37Y50         LUT3 (Prop_lut3_I1_O)        0.124     9.080 r  adapter_serial_parallel/piso_data_out/intermediate[4]_C_i_1/O
+                         net (fo=2, routed)           0.346     9.426    adapter_serial_parallel/piso_data_out/p_2_in[4]
+    SLICE_X36Y51         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y51         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X36Y51         FDCE (Setup_fdce_C_D)       -0.067    13.243    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C
+  -------------------------------------------------------------------
+                         required time                         13.243    
+                         arrival time                          -9.426    
+  -------------------------------------------------------------------
+                         slack                                  3.817    
+
+Slack (MET) :             3.823ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        4.011ns  (logic 2.011ns (50.143%)  route 2.000ns (49.857%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.695     6.582    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X41Y52         LUT3 (Prop_lut3_I0_O)        0.322     6.904 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[3]_LDC_i_2/O
+                         net (fo=2, routed)           0.547     7.451    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C_0
+    SLICE_X40Y50         LDCE (SetClr_ldce_CLR_Q)     1.087     8.538 f  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_LDC/Q
+                         net (fo=1, routed)           0.418     8.956    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_LDC_n_0
+    SLICE_X37Y50         LUT3 (Prop_lut3_I1_O)        0.124     9.080 r  adapter_serial_parallel/piso_data_out/intermediate[4]_C_i_1/O
+                         net (fo=2, routed)           0.340     9.420    adapter_serial_parallel/piso_data_out/p_2_in[4]
+    SLICE_X37Y51         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y51         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X37Y51         FDPE (Setup_fdpe_C_D)       -0.067    13.243    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P
+  -------------------------------------------------------------------
+                         required time                         13.243    
+                         arrival time                          -9.420    
+  -------------------------------------------------------------------
+                         slack                                  3.823    
+
+Slack (MET) :             3.893ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        3.941ns  (logic 1.979ns (50.216%)  route 1.962ns (49.784%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 r  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.635     6.522    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y50         LUT3 (Prop_lut3_I0_O)        0.290     6.812 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[2]_LDC_i_2/O
+                         net (fo=2, routed)           0.495     7.307    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C_0
+    SLICE_X39Y49         LDCE (SetClr_ldce_CLR_Q)     1.087     8.394 f  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_LDC/Q
+                         net (fo=1, routed)           0.493     8.888    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_LDC_n_0
+    SLICE_X39Y49         LUT3 (Prop_lut3_I1_O)        0.124     9.012 r  adapter_serial_parallel/piso_data_out/intermediate[3]_C_i_1/O
+                         net (fo=2, routed)           0.339     9.350    adapter_serial_parallel/piso_data_out/p_2_in[3]
+    SLICE_X37Y50         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y50         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X37Y50         FDPE (Setup_fdpe_C_D)       -0.067    13.243    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P
+  -------------------------------------------------------------------
+                         required time                         13.243    
+                         arrival time                          -9.350    
+  -------------------------------------------------------------------
+                         slack                                  3.893    
+
+Slack (MET) :             4.014ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        3.819ns  (logic 1.881ns (49.259%)  route 1.938ns (50.741%))
+  Logic Levels:           3  (LDCE=1 LUT3=2)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.953ns = ( 12.953 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.518     5.927 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/Q
+                         net (fo=2, routed)           0.809     6.737    adapter_serial_parallel/mini_router/ff_valid/Q[4]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I1_O)        0.152     6.889 r  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[4]_LDC_i_2/O
+                         net (fo=2, routed)           0.522     7.411    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C_0
+    SLICE_X36Y52         LDCE (SetClr_ldce_CLR_Q)     1.087     8.498 f  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_LDC/Q
+                         net (fo=1, routed)           0.265     8.763    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_LDC_n_0
+    SLICE_X37Y52         LUT3 (Prop_lut3_I1_O)        0.124     8.887 r  adapter_serial_parallel/piso_data_out/intermediate[5]_C_i_1/O
+                         net (fo=2, routed)           0.341     9.228    adapter_serial_parallel/piso_data_out/p_2_in[5]
+    SLICE_X37Y53         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.562    12.953    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y53         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P/C
+                         clock pessimism              0.391    13.344    
+                         clock uncertainty           -0.035    13.309    
+    SLICE_X37Y53         FDPE (Setup_fdpe_C_D)       -0.067    13.242    adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P
+  -------------------------------------------------------------------
+                         required time                         13.242    
+                         arrival time                          -9.228    
+  -------------------------------------------------------------------
+                         slack                                  4.014    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.058ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.392ns  (logic 0.209ns (53.330%)  route 0.183ns (46.670%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.264ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.505ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.593     1.505    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y49         FDPE (Prop_fdpe_C_Q)         0.164     1.669 r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/Q
+                         net (fo=1, routed)           0.082     1.751    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P_n_0
+    SLICE_X39Y49         LUT3 (Prop_lut3_I0_O)        0.045     1.796 r  adapter_serial_parallel/piso_data_out/intermediate[3]_C_i_1/O
+                         net (fo=2, routed)           0.101     1.897    adapter_serial_parallel/piso_data_out/p_2_in[3]
+    SLICE_X37Y50         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y50         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/C
+                         clock pessimism             -0.247     1.769    
+    SLICE_X37Y50         FDPE (Hold_fdpe_C_D)         0.070     1.839    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P
+  -------------------------------------------------------------------
+                         required time                         -1.839    
+                         arrival time                           1.897    
+  -------------------------------------------------------------------
+                         slack                                  0.058    
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.458ns  (logic 0.209ns (45.630%)  route 0.249ns (54.370%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.264ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.505ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.593     1.505    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y49         FDPE (Prop_fdpe_C_Q)         0.164     1.669 r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/Q
+                         net (fo=1, routed)           0.082     1.751    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P_n_0
+    SLICE_X39Y49         LUT3 (Prop_lut3_I0_O)        0.045     1.796 r  adapter_serial_parallel/piso_data_out/intermediate[3]_C_i_1/O
+                         net (fo=2, routed)           0.167     1.963    adapter_serial_parallel/piso_data_out/p_2_in[3]
+    SLICE_X36Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/C
+                         clock pessimism             -0.247     1.769    
+    SLICE_X36Y50         FDCE (Hold_fdce_C_D)         0.070     1.839    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C
+  -------------------------------------------------------------------
+                         required time                         -1.839    
+                         arrival time                           1.963    
+  -------------------------------------------------------------------
+                         slack                                  0.124    
+
+Slack (MET) :             0.137ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_10_data2/q_reg[8]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.215ns  (logic 0.141ns (65.642%)  route 0.074ns (34.358%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_10_data2/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_10_data2/q_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.141     1.642 r  adapter_serial_parallel/mini_router/ff_10_data2/q_reg[8]/Q
+                         net (fo=2, routed)           0.074     1.716    adapter_serial_parallel/mini_router/ff_10_data2/q_reg[8]_0
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/mini_router/ff_10_data2/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]/C
+                         clock pessimism             -0.517     1.501    
+    SLICE_X40Y51         FDCE (Hold_fdce_C_D)         0.078     1.579    adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -1.579    
+                         arrival time                           1.716    
+  -------------------------------------------------------------------
+                         slack                                  0.137    
+
+Slack (MET) :             0.168ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/serial_output_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.273ns  (logic 0.186ns (68.212%)  route 0.087ns (31.788%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X40Y52         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y52         FDCE (Prop_fdce_C_Q)         0.141     1.642 r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/Q
+                         net (fo=1, routed)           0.087     1.729    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C_n_0
+    SLICE_X41Y52         LUT6 (Prop_lut6_I2_O)        0.045     1.774 r  adapter_serial_parallel/piso_data_out/serial_output_i_1/O
+                         net (fo=1, routed)           0.000     1.774    adapter_serial_parallel/piso_data_out/serial_output_i_1_n_0
+    SLICE_X41Y52         FDRE                                         r  adapter_serial_parallel/piso_data_out/serial_output_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X41Y52         FDRE                                         r  adapter_serial_parallel/piso_data_out/serial_output_reg/C
+                         clock pessimism             -0.504     1.514    
+    SLICE_X41Y52         FDRE (Hold_fdre_C_D)         0.092     1.606    adapter_serial_parallel/piso_data_out/serial_output_reg
+  -------------------------------------------------------------------
+                         required time                         -1.606    
+                         arrival time                           1.774    
+  -------------------------------------------------------------------
+                         slack                                  0.168    
+
+Slack (MET) :             0.179ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/ff_req1/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/mini_router/ff_req1/q_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/ff_req1/clk_IBUF_BUFG
+    SLICE_X43Y50         FDCE                                         r  adapter_serial_parallel/ff_req1/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y50         FDCE (Prop_fdce_C_Q)         0.141     1.642 r  adapter_serial_parallel/ff_req1/q_reg/Q
+                         net (fo=1, routed)           0.110     1.752    adapter_serial_parallel/mini_router/ff_req1/q_reg_0
+    SLICE_X43Y50         FDCE                                         r  adapter_serial_parallel/mini_router/ff_req1/q_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/mini_router/ff_req1/clk_IBUF_BUFG
+    SLICE_X43Y50         FDCE                                         r  adapter_serial_parallel/mini_router/ff_req1/q_reg/C
+                         clock pessimism             -0.517     1.501    
+    SLICE_X43Y50         FDCE (Hold_fdce_C_D)         0.072     1.573    adapter_serial_parallel/mini_router/ff_req1/q_reg
+  -------------------------------------------------------------------
+                         required time                         -1.573    
+                         arrival time                           1.752    
+  -------------------------------------------------------------------
+                         slack                                  0.179    
+
+Slack (MET) :             0.186ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/ff_req2/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/mini_router/ff_req2/q_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.828%)  route 0.116ns (45.172%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/ff_req2/clk_IBUF_BUFG
+    SLICE_X43Y52         FDCE                                         r  adapter_serial_parallel/ff_req2/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y52         FDCE (Prop_fdce_C_Q)         0.141     1.642 r  adapter_serial_parallel/ff_req2/q_reg/Q
+                         net (fo=1, routed)           0.116     1.758    adapter_serial_parallel/mini_router/ff_req2/q_reg_0
+    SLICE_X43Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_req2/q_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/mini_router/ff_req2/clk_IBUF_BUFG
+    SLICE_X43Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_req2/q_reg/C
+                         clock pessimism             -0.517     1.501    
+    SLICE_X43Y52         FDCE (Hold_fdce_C_D)         0.071     1.572    adapter_serial_parallel/mini_router/ff_req2/q_reg
+  -------------------------------------------------------------------
+                         required time                         -1.572    
+                         arrival time                           1.758    
+  -------------------------------------------------------------------
+                         slack                                  0.186    
+
+Slack (MET) :             0.198ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.290ns  (logic 0.226ns (77.929%)  route 0.064ns (22.071%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_10_data2/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.128     1.629 r  adapter_serial_parallel/mini_router/ff_10_data2/q_reg[9]/Q
+                         net (fo=1, routed)           0.064     1.693    adapter_serial_parallel/mini_router/mux/q_reg[7]_0
+    SLICE_X40Y51         LUT6 (Prop_lut6_I5_O)        0.098     1.791 r  adapter_serial_parallel/mini_router/mux/q[7]_i_1/O
+                         net (fo=1, routed)           0.000     1.791    adapter_serial_parallel/mini_router/ff_8_data_out/D[7]
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/C
+                         clock pessimism             -0.517     1.501    
+    SLICE_X40Y51         FDCE (Hold_fdce_C_D)         0.092     1.593    adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.593    
+                         arrival time                           1.791    
+  -------------------------------------------------------------------
+                         slack                                  0.198    
+
+Slack (MET) :             0.201ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/D
+                            (rising edge-triggered cell FDPE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.535ns  (logic 0.209ns (39.064%)  route 0.326ns (60.936%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.275ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.021ns
+    Source Clock Delay      (SCD):    1.499ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.587     1.499    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y51         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y51         FDCE (Prop_fdce_C_Q)         0.164     1.663 r  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C/Q
+                         net (fo=1, routed)           0.141     1.804    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C_n_0
+    SLICE_X38Y50         LUT3 (Prop_lut3_I2_O)        0.045     1.849 r  adapter_serial_parallel/piso_data_out/intermediate[2]_C_i_1/O
+                         net (fo=2, routed)           0.185     2.034    adapter_serial_parallel/piso_data_out/p_2_in[2]
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.862     2.021    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+                         clock pessimism             -0.247     1.774    
+    SLICE_X38Y49         FDPE (Hold_fdpe_C_D)         0.059     1.833    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P
+  -------------------------------------------------------------------
+                         required time                         -1.833    
+                         arrival time                           2.034    
+  -------------------------------------------------------------------
+                         slack                                  0.201    
+
+Slack (MET) :             0.206ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/sipo_data2/intermediate_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/sipo_data2/intermediate_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.164ns (57.535%)  route 0.121ns (42.465%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/sipo_data2/clk_IBUF_BUFG
+    SLICE_X42Y50         FDCE                                         r  adapter_serial_parallel/sipo_data2/intermediate_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y50         FDCE (Prop_fdce_C_Q)         0.164     1.665 r  adapter_serial_parallel/sipo_data2/intermediate_reg[2]/Q
+                         net (fo=2, routed)           0.121     1.786    adapter_serial_parallel/sipo_data2/intermediate_reg[2]_0
+    SLICE_X42Y51         FDCE                                         r  adapter_serial_parallel/sipo_data2/intermediate_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/sipo_data2/clk_IBUF_BUFG
+    SLICE_X42Y51         FDCE                                         r  adapter_serial_parallel/sipo_data2/intermediate_reg[3]/C
+                         clock pessimism             -0.501     1.517    
+    SLICE_X42Y51         FDCE (Hold_fdce_C_D)         0.063     1.580    adapter_serial_parallel/sipo_data2/intermediate_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.580    
+                         arrival time                           1.786    
+  -------------------------------------------------------------------
+                         slack                                  0.206    
+
+Slack (MET) :             0.210ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_10_data1/q_reg[8]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.302ns  (logic 0.227ns (75.183%)  route 0.075ns (24.817%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_10_data1/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_10_data1/q_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.128     1.629 r  adapter_serial_parallel/mini_router/ff_10_data1/q_reg[8]/Q
+                         net (fo=2, routed)           0.075     1.704    adapter_serial_parallel/mini_router/mux/q_reg[6]
+    SLICE_X40Y51         LUT6 (Prop_lut6_I1_O)        0.099     1.803 r  adapter_serial_parallel/mini_router/mux/q[6]_i_1/O
+                         net (fo=1, routed)           0.000     1.803    adapter_serial_parallel/mini_router/ff_8_data_out/D[6]
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/C
+                         clock pessimism             -0.517     1.501    
+    SLICE_X40Y51         FDCE (Hold_fdce_C_D)         0.092     1.593    adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.593    
+                         arrival time                           1.803    
+  -------------------------------------------------------------------
+                         slack                                  0.210    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk125
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         8.000       5.845      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y49    adapter_serial_parallel/ff_data1_serial/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y49    adapter_serial_parallel/ff_data2_serial/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y52    adapter_serial_parallel/ff_data_out_serial/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y52    adapter_serial_parallel/ff_grant1/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y52    adapter_serial_parallel/ff_grant2/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y50    adapter_serial_parallel/ff_req1/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y52    adapter_serial_parallel/ff_req2/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y52    adapter_serial_parallel/ff_valid/q_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y50    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_data_out_serial/q_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_grant1/q_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_grant2/q_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y50    adapter_serial_parallel/ff_req1/q_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_req2/q_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_valid/q_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y50    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y51    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[3]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y50    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[4]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y52    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[5]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y49    adapter_serial_parallel/ff_data1_serial/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y49    adapter_serial_parallel/ff_data2_serial/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_data_out_serial/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_grant1/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_grant2/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y50    adapter_serial_parallel/ff_req1/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_req2/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y52    adapter_serial_parallel/ff_valid/q_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y50    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[0]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y51    adapter_serial_parallel/mini_router/ff_10_data1/q_reg[3]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk125
+  To Clock:  clk125
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.991ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.406ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.991ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C/CLR
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.389ns  (logic 0.800ns (33.486%)  route 1.589ns (66.514%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.785     6.672    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y51         LUT3 (Prop_lut3_I0_O)        0.322     6.994 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[1]_LDC_i_2/O
+                         net (fo=2, routed)           0.804     7.798    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C_0
+    SLICE_X38Y51         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y51         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X38Y51         FDCE (Recov_fdce_C_CLR)     -0.521    12.789    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_C
+  -------------------------------------------------------------------
+                         required time                         12.789    
+                         arrival time                          -7.798    
+  -------------------------------------------------------------------
+                         slack                                  4.991    
+
+Slack (MET) :             5.101ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/CLR
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.193ns  (logic 0.800ns (36.487%)  route 1.393ns (63.513%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.695     6.582    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X41Y52         LUT3 (Prop_lut3_I0_O)        0.322     6.904 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[3]_LDC_i_2/O
+                         net (fo=2, routed)           0.698     7.602    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C_0
+    SLICE_X36Y50         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X36Y50         FDCE (Recov_fdce_C_CLR)     -0.607    12.703    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C
+  -------------------------------------------------------------------
+                         required time                         12.703    
+                         arrival time                          -7.602    
+  -------------------------------------------------------------------
+                         slack                                  5.101    
+
+Slack (MET) :             5.104ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C/CLR
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.190ns  (logic 0.768ns (35.072%)  route 1.422ns (64.928%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.635     6.522    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y50         LUT3 (Prop_lut3_I0_O)        0.290     6.812 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[2]_LDC_i_2/O
+                         net (fo=2, routed)           0.787     7.599    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C_0
+    SLICE_X39Y50         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X39Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X39Y50         FDCE (Recov_fdce_C_CLR)     -0.607    12.703    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_C
+  -------------------------------------------------------------------
+                         required time                         12.703    
+                         arrival time                          -7.599    
+  -------------------------------------------------------------------
+                         slack                                  5.104    
+
+Slack (MET) :             5.150ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C/CLR
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.143ns  (logic 0.770ns (35.932%)  route 1.373ns (64.068%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.683     6.570    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y52         LUT3 (Prop_lut3_I0_O)        0.292     6.862 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[6]_LDC_i_2/O
+                         net (fo=2, routed)           0.690     7.552    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C_0
+    SLICE_X37Y52         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y52         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X37Y52         FDCE (Recov_fdce_C_CLR)     -0.608    12.702    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_C
+  -------------------------------------------------------------------
+                         required time                         12.702    
+                         arrival time                          -7.552    
+  -------------------------------------------------------------------
+                         slack                                  5.150    
+
+Slack (MET) :             5.276ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P/PRE
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.265ns  (logic 0.642ns (28.339%)  route 1.623ns (71.661%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.518     5.927 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/Q
+                         net (fo=2, routed)           0.809     6.737    adapter_serial_parallel/mini_router/ff_valid/Q[4]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I2_O)        0.124     6.861 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[4]_LDC_i_1/O
+                         net (fo=2, routed)           0.814     7.675    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P_0
+    SLICE_X37Y51         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y51         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X37Y51         FDPE (Recov_fdpe_C_PRE)     -0.359    12.951    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_P
+  -------------------------------------------------------------------
+                         required time                         12.951    
+                         arrival time                          -7.675    
+  -------------------------------------------------------------------
+                         slack                                  5.276    
+
+Slack (MET) :             5.293ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/PRE
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.248ns  (logic 0.774ns (34.427%)  route 1.474ns (65.573%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.695     6.582    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X41Y52         LUT3 (Prop_lut3_I1_O)        0.296     6.878 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[3]_LDC_i_1/O
+                         net (fo=2, routed)           0.780     7.658    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P_0
+    SLICE_X37Y50         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y50         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X37Y50         FDPE (Recov_fdpe_C_PRE)     -0.359    12.951    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P
+  -------------------------------------------------------------------
+                         required time                         12.951    
+                         arrival time                          -7.658    
+  -------------------------------------------------------------------
+                         slack                                  5.293    
+
+Slack (MET) :             5.309ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/CLR
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        1.985ns  (logic 0.670ns (33.759%)  route 1.315ns (66.241%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.518     5.927 r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[4]/Q
+                         net (fo=2, routed)           0.809     6.737    adapter_serial_parallel/mini_router/ff_valid/Q[4]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I1_O)        0.152     6.889 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[4]_LDC_i_2/O
+                         net (fo=2, routed)           0.505     7.394    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C_0
+    SLICE_X36Y51         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y51         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X36Y51         FDCE (Recov_fdce_C_CLR)     -0.607    12.703    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C
+  -------------------------------------------------------------------
+                         required time                         12.703    
+                         arrival time                          -7.394    
+  -------------------------------------------------------------------
+                         slack                                  5.309    
+
+Slack (MET) :             5.326ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/CLR
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.007ns  (logic 0.608ns (30.295%)  route 1.399ns (69.705%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.955ns = ( 12.955 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.456     5.865 r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[7]/Q
+                         net (fo=2, routed)           0.799     6.664    adapter_serial_parallel/mini_router/ff_valid/Q[7]
+    SLICE_X40Y52         LUT3 (Prop_lut3_I1_O)        0.152     6.816 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[7]_LDC_i_2/O
+                         net (fo=2, routed)           0.600     7.416    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C_0
+    SLICE_X40Y52         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.564    12.955    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X40Y52         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C/C
+                         clock pessimism              0.429    13.384    
+                         clock uncertainty           -0.035    13.349    
+    SLICE_X40Y52         FDCE (Recov_fdce_C_CLR)     -0.607    12.742    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_C
+  -------------------------------------------------------------------
+                         required time                         12.742    
+                         arrival time                          -7.416    
+  -------------------------------------------------------------------
+                         slack                                  5.326    
+
+Slack (MET) :             5.347ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/PRE
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.095ns  (logic 0.774ns (36.941%)  route 1.321ns (63.059%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.162ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.971ns = ( 12.971 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.277ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.635     6.522    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y50         LUT3 (Prop_lut3_I1_O)        0.296     6.818 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[2]_LDC_i_1/O
+                         net (fo=2, routed)           0.687     7.505    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P_0
+    SLICE_X38Y49         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.579    12.971    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+                         clock pessimism              0.277    13.248    
+                         clock uncertainty           -0.035    13.212    
+    SLICE_X38Y49         FDPE (Recov_fdpe_C_PRE)     -0.361    12.851    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P
+  -------------------------------------------------------------------
+                         required time                         12.851    
+                         arrival time                          -7.505    
+  -------------------------------------------------------------------
+                         slack                                  5.347    
+
+Slack (MET) :             5.444ns  (required time - arrival time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P/PRE
+                            (recovery check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk125 rise@8.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        2.098ns  (logic 0.774ns (36.895%)  route 1.324ns (63.105%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.954ns = ( 12.954 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.409ns
+    Clock Pessimism Removal (CPR):    0.391ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.741     5.409    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.478     5.887 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.785     6.672    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y51         LUT3 (Prop_lut3_I1_O)        0.296     6.968 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[1]_LDC_i_1/O
+                         net (fo=2, routed)           0.539     7.507    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P_0
+    SLICE_X39Y51         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          1.563    12.954    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X39Y51         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P/C
+                         clock pessimism              0.391    13.345    
+                         clock uncertainty           -0.035    13.310    
+    SLICE_X39Y51         FDPE (Recov_fdpe_C_PRE)     -0.359    12.951    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P
+  -------------------------------------------------------------------
+                         required time                         12.951    
+                         arrival time                          -7.507    
+  -------------------------------------------------------------------
+                         slack                                  5.444    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.406ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.608ns  (logic 0.186ns (30.584%)  route 0.422ns (69.416%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.273ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.021ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X41Y50         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y50         FDCE (Prop_fdce_C_Q)         0.141     1.642 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[2]/Q
+                         net (fo=2, routed)           0.196     1.837    adapter_serial_parallel/mini_router/ff_valid/Q[2]
+    SLICE_X39Y50         LUT3 (Prop_lut3_I2_O)        0.045     1.882 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[2]_LDC_i_1/O
+                         net (fo=2, routed)           0.227     2.109    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P_0
+    SLICE_X38Y49         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.862     2.021    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y49         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P/C
+                         clock pessimism             -0.247     1.774    
+    SLICE_X38Y49         FDPE (Remov_fdpe_C_PRE)     -0.071     1.703    adapter_serial_parallel/piso_data_out/intermediate_reg[2]_P
+  -------------------------------------------------------------------
+                         required time                         -1.703    
+                         arrival time                           2.109    
+  -------------------------------------------------------------------
+                         slack                                  0.406    
+
+Slack (MET) :             0.639ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.578ns  (logic 0.209ns (36.139%)  route 0.369ns (63.861%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y51         FDCE (Prop_fdce_C_Q)         0.164     1.665 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[1]/Q
+                         net (fo=2, routed)           0.185     1.850    adapter_serial_parallel/mini_router/ff_valid/Q[1]
+    SLICE_X39Y51         LUT3 (Prop_lut3_I2_O)        0.045     1.895 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[1]_LDC_i_1/O
+                         net (fo=2, routed)           0.184     2.079    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P_0
+    SLICE_X39Y51         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X39Y51         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P/C
+                         clock pessimism             -0.481     1.535    
+    SLICE_X39Y51         FDPE (Remov_fdpe_C_PRE)     -0.095     1.440    adapter_serial_parallel/piso_data_out/intermediate_reg[1]_P
+  -------------------------------------------------------------------
+                         required time                         -1.440    
+                         arrival time                           2.079    
+  -------------------------------------------------------------------
+                         slack                                  0.639    
+
+Slack (MET) :             0.641ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.579ns  (logic 0.186ns (32.123%)  route 0.393ns (67.877%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.033ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.015ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.141     1.642 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/Q
+                         net (fo=2, routed)           0.221     1.863    adapter_serial_parallel/mini_router/ff_valid/Q[5]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I2_O)        0.045     1.908 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[5]_LDC_i_1/O
+                         net (fo=2, routed)           0.172     2.080    adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P_0
+    SLICE_X37Y53         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.856     2.015    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y53         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P/C
+                         clock pessimism             -0.481     1.534    
+    SLICE_X37Y53         FDPE (Remov_fdpe_C_PRE)     -0.095     1.439    adapter_serial_parallel/piso_data_out/intermediate_reg[5]_P
+  -------------------------------------------------------------------
+                         required time                         -1.439    
+                         arrival time                           2.080    
+  -------------------------------------------------------------------
+                         slack                                  0.641    
+
+Slack (MET) :             0.694ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C/CLR
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.593ns  (logic 0.184ns (31.009%)  route 0.409ns (68.991%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.033ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.015ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.141     1.642 r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[5]/Q
+                         net (fo=2, routed)           0.221     1.863    adapter_serial_parallel/mini_router/ff_valid/Q[5]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I1_O)        0.043     1.906 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[5]_LDC_i_2/O
+                         net (fo=2, routed)           0.189     2.094    adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C_0
+    SLICE_X38Y53         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.856     2.015    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y53         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C/C
+                         clock pessimism             -0.481     1.534    
+    SLICE_X38Y53         FDCE (Remov_fdce_C_CLR)     -0.134     1.400    adapter_serial_parallel/piso_data_out/intermediate_reg[5]_C
+  -------------------------------------------------------------------
+                         required time                         -1.400    
+                         arrival time                           2.094    
+  -------------------------------------------------------------------
+                         slack                                  0.694    
+
+Slack (MET) :             0.724ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[0]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.569ns  (logic 0.207ns (36.353%)  route 0.362ns (63.647%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.018ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y51         FDCE (Prop_fdce_C_Q)         0.164     1.665 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[0]/Q
+                         net (fo=2, routed)           0.163     1.828    adapter_serial_parallel/mini_router/ff_valid/Q[0]
+    SLICE_X42Y51         LUT3 (Prop_lut3_I2_O)        0.043     1.871 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[0]_LDC_i_1/O
+                         net (fo=2, routed)           0.199     2.070    adapter_serial_parallel/piso_data_out/intermediate_reg[0]_P_0
+    SLICE_X43Y51         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[0]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.859     2.018    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X43Y51         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[0]_P/C
+                         clock pessimism             -0.504     1.514    
+    SLICE_X43Y51         FDPE (Remov_fdpe_C_PRE)     -0.168     1.346    adapter_serial_parallel/piso_data_out/intermediate_reg[0]_P
+  -------------------------------------------------------------------
+                         required time                         -1.346    
+                         arrival time                           2.070    
+  -------------------------------------------------------------------
+                         slack                                  0.724    
+
+Slack (MET) :             0.741ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.680ns  (logic 0.209ns (30.750%)  route 0.471ns (69.250%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.164     1.665 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/Q
+                         net (fo=2, routed)           0.180     1.845    adapter_serial_parallel/mini_router/ff_valid/Q[3]
+    SLICE_X41Y52         LUT3 (Prop_lut3_I2_O)        0.045     1.890 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[3]_LDC_i_1/O
+                         net (fo=2, routed)           0.291     2.181    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P_0
+    SLICE_X37Y50         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X37Y50         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P/C
+                         clock pessimism             -0.481     1.535    
+    SLICE_X37Y50         FDPE (Remov_fdpe_C_PRE)     -0.095     1.440    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_P
+  -------------------------------------------------------------------
+                         required time                         -1.440    
+                         arrival time                           2.181    
+  -------------------------------------------------------------------
+                         slack                                  0.741    
+
+Slack (MET) :             0.748ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[6]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.711ns  (logic 0.186ns (26.164%)  route 0.525ns (73.836%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X40Y51         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y51         FDCE (Prop_fdce_C_Q)         0.141     1.642 f  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[6]/Q
+                         net (fo=2, routed)           0.283     1.925    adapter_serial_parallel/mini_router/ff_valid/Q[6]
+    SLICE_X39Y52         LUT3 (Prop_lut3_I2_O)        0.045     1.970 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[6]_LDC_i_1/O
+                         net (fo=2, routed)           0.242     2.212    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_P_0
+    SLICE_X38Y52         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[6]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X38Y52         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[6]_P/C
+                         clock pessimism             -0.481     1.535    
+    SLICE_X38Y52         FDPE (Remov_fdpe_C_PRE)     -0.071     1.464    adapter_serial_parallel/piso_data_out/intermediate_reg[6]_P
+  -------------------------------------------------------------------
+                         required time                         -1.464    
+                         arrival time                           2.212    
+  -------------------------------------------------------------------
+                         slack                                  0.748    
+
+Slack (MET) :             0.759ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P/PRE
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.679ns  (logic 0.246ns (36.235%)  route 0.433ns (63.765%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.017ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.148     1.649 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.209     1.857    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X40Y52         LUT3 (Prop_lut3_I1_O)        0.098     1.955 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[7]_LDC_i_1/O
+                         net (fo=2, routed)           0.224     2.180    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P_0
+    SLICE_X41Y53         FDPE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.858     2.017    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X41Y53         FDPE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P/C
+                         clock pessimism             -0.501     1.516    
+    SLICE_X41Y53         FDPE (Remov_fdpe_C_PRE)     -0.095     1.421    adapter_serial_parallel/piso_data_out/intermediate_reg[7]_P
+  -------------------------------------------------------------------
+                         required time                         -1.421    
+                         arrival time                           2.180    
+  -------------------------------------------------------------------
+                         slack                                  0.759    
+
+Slack (MET) :             0.768ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/CLR
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.648ns  (logic 0.210ns (32.408%)  route 0.438ns (67.592%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_8_data_out/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.164     1.665 r  adapter_serial_parallel/mini_router/ff_8_data_out/q_reg[3]/Q
+                         net (fo=2, routed)           0.180     1.845    adapter_serial_parallel/mini_router/ff_valid/Q[3]
+    SLICE_X41Y52         LUT3 (Prop_lut3_I1_O)        0.046     1.891 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[3]_LDC_i_2/O
+                         net (fo=2, routed)           0.258     2.149    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C_0
+    SLICE_X36Y50         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y50         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C/C
+                         clock pessimism             -0.481     1.535    
+    SLICE_X36Y50         FDCE (Remov_fdce_C_CLR)     -0.154     1.381    adapter_serial_parallel/piso_data_out/intermediate_reg[3]_C
+  -------------------------------------------------------------------
+                         required time                         -1.381    
+                         arrival time                           2.149    
+  -------------------------------------------------------------------
+                         slack                                  0.768    
+
+Slack (MET) :             0.775ns  (arrival time - required time)
+  Source:                 adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/CLR
+                            (removal check against rising-edge clock clk125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk125 rise@0.000ns - clk125 rise@0.000ns)
+  Data Path Delay:        0.655ns  (logic 0.249ns (38.037%)  route 0.406ns (61.963%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.016ns
+    Source Clock Delay      (SCD):    1.501ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.589     1.501    adapter_serial_parallel/mini_router/ff_valid/clk_IBUF_BUFG
+    SLICE_X42Y52         FDCE                                         r  adapter_serial_parallel/mini_router/ff_valid/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y52         FDCE (Prop_fdce_C_Q)         0.148     1.649 f  adapter_serial_parallel/mini_router/ff_valid/q_reg/Q
+                         net (fo=18, routed)          0.221     1.870    adapter_serial_parallel/mini_router/ff_valid/q_reg_0
+    SLICE_X39Y52         LUT3 (Prop_lut3_I0_O)        0.101     1.971 f  adapter_serial_parallel/mini_router/ff_valid/intermediate_reg[4]_LDC_i_2/O
+                         net (fo=2, routed)           0.184     2.155    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C_0
+    SLICE_X36Y51         FDCE                                         f  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk125 rise edge)     0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=60, routed)          0.857     2.016    adapter_serial_parallel/piso_data_out/clk_IBUF_BUFG
+    SLICE_X36Y51         FDCE                                         r  adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C/C
+                         clock pessimism             -0.481     1.535    
+    SLICE_X36Y51         FDCE (Remov_fdce_C_CLR)     -0.154     1.381    adapter_serial_parallel/piso_data_out/intermediate_reg[4]_C
+  -------------------------------------------------------------------
+                         required time                         -1.381    
+                         arrival time                           2.155    
+  -------------------------------------------------------------------
+                         slack                                  0.775    
+
+
+
+
+

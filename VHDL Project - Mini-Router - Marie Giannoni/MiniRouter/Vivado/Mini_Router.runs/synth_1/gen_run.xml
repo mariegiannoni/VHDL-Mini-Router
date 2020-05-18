@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1581208540">
+  <File Type="PA-TCL" Name="MINI_ROUTER_WRAPPER.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="MINI_ROUTER_WRAPPER_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="MINI_ROUTER_WRAPPER_reports.tcl"/>
+  <File Type="RDS-RDS" Name="MINI_ROUTER_WRAPPER.vds"/>
+  <File Type="RDS-UTIL" Name="MINI_ROUTER_WRAPPER_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="MINI_ROUTER_WRAPPER_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="MINI_ROUTER_WRAPPER.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="MINI_ROUTER_WRAPPER_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="MINI_ROUTER_WRAPPER_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/Adapter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/Adapter.vhd"/>
+        <Attr Name="ImportTime" Val="1581070978"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Decoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/Decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1579283917"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/LUT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/LUT.vhd"/>
+        <Attr Name="ImportTime" Val="1579286875"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/MiniRouter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/MiniRouter.vhd"/>
+        <Attr Name="ImportTime" Val="1579643717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Multiplexer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/Multiplexer.vhd"/>
+        <Attr Name="ImportTime" Val="1579652490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/RoundRobin.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/RoundRobin.vhd"/>
+        <Attr Name="ImportTime" Val="1579530165"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/d_flip_flop.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/d_flip_flop.vhd"/>
+        <Attr Name="ImportTime" Val="1579287001"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/d_flip_flop_n.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/d_flip_flop_n.vhd"/>
+        <Attr Name="ImportTime" Val="1579286959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/piso.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/piso.vhd"/>
+        <Attr Name="ImportTime" Val="1581076567"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sipo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/sipo.vhd"/>
+        <Attr Name="ImportTime" Val="1581076341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/Wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1579968684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MINI_ROUTER_WRAPPER"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constr/MINI_ROUTER_CONSTRAINTS.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/constr/MINI_ROUTER_CONSTRAINTS.xdc"/>
+        <Attr Name="ImportTime" Val="1579993183"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constr/MINI_ROUTER_CONSTRAINTS.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
